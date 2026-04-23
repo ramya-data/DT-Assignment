@@ -69,7 +69,7 @@ Based on the combination of answers, we get **12 possible reflection outcomes**:
 
 Below is the visual representation of the tree:
 
-![Daily Reflection Tree](./diagram.png)
+![Daily Reflection Tree](./tree-diagram.png)
 
 > *(Upload your generated image as `diagram.png` in the repo)*
 
