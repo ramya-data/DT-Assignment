@@ -1,18 +1,34 @@
 1.Sample Transcript 1
 Persona: Victim + Entitled + Self-Centric
 
+
+
 --- Daily Reflection ---
 
-Q1:
+When something didn't go as planned today, what was your first reaction?
+A) I thought about what I could have done differently
 B) I felt frustrated by things outside my control
-
-Q2:
+C) I adapted and found another way
+D) I waited for someone else to fix it
+Select option (A/B/C/D): 
+Which of these best describes a moment from today?
+A) I helped someone with something that wasn't my responsibility
 B) I felt I deserved more recognition for my work
-
-Q3:
+C) I did something extra without being asked
+D) I felt frustrated that others weren't pulling their weight
+Select option (A/B/C/D): 
+When you think about today's biggest challenge, who comes to mind?
 A) Just me — it was my problem to solve
+B) My team — we were all affected
+C) A specific colleague who had it harder than me
+D) The customer or end user we're serving
+Select option (A/B/C/D): 
+--- Reflection Summary ---
 
-Output:
+Your Responses:
+- I felt frustrated by things outside my control
+- I felt I deserved more recognition for my work
+- Just me — it was my problem to solve
 
 Your Reflection Type:
 Disengaged Reactor
@@ -28,22 +44,38 @@ State Breakdown:
 - orientation: entitlement
 - radius: self
 
-2.Sample Transcript 2
-Persona: Victor + Contributing + Altrocentric
+
+
+
+2.Sample Transcript-2
+
 
 --- Daily Reflection ---
 
-Q1:
+When something didn't go as planned today, what was your first reaction?
+A) I thought about what I could have done differently
+B) I felt frustrated by things outside my control
 C) I adapted and found another way
-
-Q2:
+D) I waited for someone else to fix it
+Select option (A/B/C/D): 
+Which of these best describes a moment from today?
 A) I helped someone with something that wasn't my responsibility
-
-Q3:
+B) I felt I deserved more recognition for my work
+C) I did something extra without being asked
+D) I felt frustrated that others weren't pulling their weight
+Select option (A/B/C/D): 
+When you think about today's biggest challenge, who comes to mind?
+A) Just me — it was my problem to solve
+B) My team — we were all affected
+C) A specific colleague who had it harder than me
 D) The customer or end user we're serving
+Select option (A/B/C/D): 
+--- Reflection Summary ---
 
-
-Output:
+Your Responses:
+- I adapted and found another way
+- I helped someone with something that wasn't my responsibility
+- The customer or end user we're serving
 
 Your Reflection Type:
 Purpose-Driven Contributor
