@@ -1,0 +1,5 @@
+reflection-agent/
+│
+├── tree.json          # JSON
+├── agent.py           # runtime engine
+└── transcripts/       # sample outputs

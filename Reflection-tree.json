@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "name": "Daily Reflection Tree",
+    "version": "1.0",
+    "axes": ["locus", "orientation", "radius"]
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "axis": "locus",
+      "text": "When something didn't go as planned today, what was your first reaction?",
+      "options": [
+        { "id": "A", "text": "I thought about what I could have done differently", "maps_to": "internal" },
+        { "id": "B", "text": "I felt frustrated by things outside my control", "maps_to": "external" },
+        { "id": "C", "text": "I adapted and found another way", "maps_to": "internal" },
+        { "id": "D", "text": "I waited for someone else to fix it", "maps_to": "external" }
+      ]
+    },
+    {
+      "id": "Q2",
+      "axis": "orientation",
+      "text": "Which of these best describes a moment from today?",
+      "options": [
+        { "id": "A", "text": "I helped someone with something that wasn't my responsibility", "maps_to": "contribution" },
+        { "id": "B", "text": "I felt I deserved more recognition for my work", "maps_to": "entitlement" },
+        { "id": "C", "text": "I did something extra without being asked", "maps_to": "contribution" },
+        { "id": "D", "text": "I felt frustrated that others weren't pulling their weight", "maps_to": "entitlement" }
+      ]
+    },
+    {
+      "id": "Q3",
+      "axis": "radius",
+      "text": "When you think about today's biggest challenge, who comes to mind?",
+      "options": [
+        { "id": "A", "text": "Just me — it was my problem to solve", "maps_to": "self" },
+        { "id": "B", "text": "My team — we were all affected", "maps_to": "team" },
+        { "id": "C", "text": "A specific colleague who had it harder than me", "maps_to": "beyond_self" },
+        { "id": "D", "text": "The customer or end user we're serving", "maps_to": "beyond_self" }
+      ]
+    }
+  ],
+  "logic": {
+    "sequence": ["Q1", "Q2", "Q3"],
+    "state_combination": "locus + '_' + orientation + '_' + radius"
+  },
+  "outcomes": {
+    "internal_contribution_self": {
+      "label": "Disciplined Doer",
+      "insight": "You took ownership and focused on executing your responsibilities well. Your impact stayed mostly within your own scope.",
+      "prompt": "Where could your effort have helped someone else move forward?"
+    },
+    "internal_contribution_team": {
+      "label": "Reliable Teammate",
+      "insight": "You took responsibility and contributed to the team's progress.",
+      "prompt": "Who on your team could benefit from more proactive support tomorrow?"
+    },
+    "internal_contribution_beyond_self": {
+      "label": "Purpose-Driven Contributor",
+      "insight": "You owned your actions, contributed meaningfully, and connected your work to a larger purpose.",
+      "prompt": "What is one way to sustain or scale this impact tomorrow?"
+    },
+    "internal_entitlement_self": {
+      "label": "Capable but Frustrated",
+      "insight": "You know you have agency, but your focus stayed on what you didn’t receive.",
+      "prompt": "What did you expect today—and did you communicate or earn it?"
+    },
+    "internal_entitlement_team": {
+      "label": "Judging Contributor",
+      "insight": "You took responsibility, but focused on what others weren’t doing.",
+      "prompt": "Where could you influence instead of evaluate?"
+    },
+    "internal_entitlement_beyond_self": {
+      "label": "Mission-Aligned but Resentful",
+      "insight": "You care about the bigger picture, but frustration about fairness is getting in the way.",
+      "prompt": "What matters more right now: being right, or being effective?"
+    },
+    "external_contribution_self": {
+      "label": "Effortful but Reactive",
+      "insight": "You tried to do your part, but felt driven by circumstances.",
+      "prompt": "Where did you actually have a choice today, even if small?"
+    },
+    "external_contribution_team": {
+      "label": "Supportive but Dependent",
+      "insight": "You contributed to others, but relied heavily on external conditions.",
+      "prompt": "What could you initiate tomorrow without waiting for direction?"
+    },
+    "external_contribution_beyond_self": {
+      "label": "Well-Intentioned but Diffused",
+      "insight": "You care about others and the bigger picture, but don’t fully see your agency.",
+      "prompt": "How can you turn concern into concrete action?"
+    },
+    "external_entitlement_self": {
+      "label": "Disengaged Reactor",
+      "insight": "The day felt like something that happened to you.",
+      "prompt": "What is one small thing you could have done differently?"
+    },
+    "external_entitlement_team": {
+      "label": "Frustrated Observer",
+      "insight": "You noticed what others weren’t doing but didn’t step in to change it.",
+      "prompt": "Where could you shift from noticing problems to owning one?"
+    },
+    "external_entitlement_beyond_self": {
+      "label": "Cynical Idealist",
+      "insight": "You see the bigger system and its flaws, but feel powerless within it.",
+      "prompt": "What is one meaningful action still within your control?"
+    }
+  }
+} 

@@ -1,0 +1,60 @@
+1.Sample Transcript 1
+Persona: Victim + Entitled + Self-Centric
+
+--- Daily Reflection ---
+
+Q1:
+B) I felt frustrated by things outside my control
+
+Q2:
+B) I felt I deserved more recognition for my work
+
+Q3:
+A) Just me — it was my problem to solve
+
+Output:
+
+Your Reflection Type:
+Disengaged Reactor
+
+Insight:
+The day felt like something that happened to you.
+
+Prompt:
+What is one small thing you could have done differently?
+
+State Breakdown:
+- locus: external
+- orientation: entitlement
+- radius: self
+
+2.Sample Transcript 2
+Persona: Victor + Contributing + Altrocentric
+
+--- Daily Reflection ---
+
+Q1:
+C) I adapted and found another way
+
+Q2:
+A) I helped someone with something that wasn't my responsibility
+
+Q3:
+D) The customer or end user we're serving
+
+
+Output:
+
+Your Reflection Type:
+Purpose-Driven Contributor
+
+Insight:
+You owned your actions, contributed meaningfully, and connected your work to a larger purpose.
+
+Prompt:
+What is one way to sustain or scale this impact tomorrow?
+
+State Breakdown:
+- locus: internal
+- orientation: contribution
+- radius: beyond_self

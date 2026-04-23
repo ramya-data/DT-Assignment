@@ -1,0 +1,120 @@
+1. Why these specific questions
+The core goal was to translate abstract psychological constructs into observable, answerable behaviors. Each question was designed to:
+Be situational (today-based) rather than abstract
+Force a clear cognitive choice, not a vague reflection
+Map cleanly to one axis only, avoiding overlap
+Axis 1: Locus (Control)
+The question:
+“When something didn’t go as planned…”
+This works because:
+It anchors in failure or disruption, where locus is most visible
+Options distinguish:
+Agency (A, C) → reflection, adaptation
+Powerlessness (B, D) → frustration, passivity
+This avoids asking directly “Do you feel in control?” which produces biased answers.
+Axis 2: Orientation (Contribution vs Entitlement)
+The question:
+“Which of these best describes a moment from today?”
+Key design choices:
+Uses behavioral evidence, not self-perception
+Includes both:
+Active contribution (A, C)
+Passive dissatisfaction (B, D)
+This exposes entitlement indirectly, since entitlement is rarely self-identified.
+Axis 3: Radius (Self → Beyond Self)
+The question:
+“Who comes to mind?”
+This is intentionally:
+Perspective-based, not emotional
+Expands from:
+Self → Team → Others → Customer
+We merged “empathy” and “customer” into “beyond self” to reduce complexity while preserving psychological meaning.
+
+2. Branching Design & Trade-offs
+Why sequential axes (not mixed)
+The tree enforces order:
+Locus → Orientation → Radius
+Reason:
+Locus first: establishes agency baseline
+Orientation second: evaluates intent
+Radius last: expands perspective
+Changing this order would distort interpretation (e.g., empathy without agency is less actionable).
+Why 12 leaves instead of 16
+A full factorial model gives:
+2 × 2 × 4 = 16 states
+But this was reduced to:
+2 × 2 × 3 = 12 states
+Trade-off:
+ Simpler, more interpretable outputs
+ Avoids redundancy between empathy vs customer
+ Slight loss of granularity
+Decision: prioritize clarity over completeness
+Determinism vs richness
+Constraint:
+No LLM
+No free text
+Trade-off:
+ Cannot capture nuance dynamically
+ Fully auditable, repeatable system
+To compensate:
+Options are carefully worded to encode nuance
+Leaf insights provide interpretive depth
+
+3. Psychological Foundations
+This design is grounded in established frameworks:
+Locus of Control — Julian Rotter
+Internal vs External attribution
+Core to how individuals interpret outcomes
+Growth Mindset — Carol Dweck
+Embedded in internal locus responses
+Focus on adaptability and learning
+Psychological Entitlement — W. Keith Campbell
+Captured through expectation vs contribution framing
+Organizational Citizenship Behavior — Dennis Organ
+Reflected in “extra effort” and helping behavior
+Self-Transcendence — Abraham Maslow
+Basis for radius expansion beyond self
+Perspective-Taking — C. Daniel Batson
+Operationalized in “who comes to mind” question
+
+4. What I would improve with more time
+1. Branch-specific questioning
+Currently:
+Same Q2 and Q3 for all users
+Improvement:
+Adapt wording based on previous answer
+Example:
+External locus → “Even if things felt out of control…”
+This would make it feel more like a conversation than a survey
+2. Temporal tracking
+Add:
+Daily state logging
+Movement across time
+This enables:
+Behavior trends
+Coaching insights
+3. Micro-interventions per leaf
+Right now:
+Each leaf gives 1 prompt
+Improve by adding:
+2–3 actionable next steps
+Difficulty levels (easy → stretch)
+4. Scoring layer
+Map states to scores:
+Internal (+1) vs External (0)
+Contribution (+1) vs Entitlement (0)
+Radius (0–2 scale)
+This enables:
+Quantitative dashboards
+Team-level aggregation
+5. Edge-case refinement
+Some states (e.g., “External + Contribution + Beyond Self”) can feel ambiguous.
+Improve by:
+Adding clarifying sub-questions
+Or splitting into more nuanced branches if needed
+Final Note
+This design intentionally balances:
+Psychological rigor
+Deterministic structure
+User experience simplicity
+It behaves less like a survey and more like a guided diagnostic conversation, which is exactly the goal of a PDGMS-style system. 
